@@ -4,6 +4,7 @@ import Clock from "./Clock";
 import AlertButton from "./AlertButton";
 import TextInputWithFocusButton from "./TextInputWithFocusButton";
 import UserStatus from "./UserStatus";
+import Toggle from "./Toggle";
 
 function App() {
   const today = new Date().toLocaleDateString();
@@ -26,7 +27,8 @@ function App() {
       {/*<AlertButton message="나를 눌렀느냐! 건방지구나!" /> /!*엘리먼트*!/*/}
 
         {/*<TextInputWithFocusButton />*/}
-        <UserStatus/>
+        {/*<UserStatus/>*/}
+      <Toggle/>
     </div>
   );
 }
