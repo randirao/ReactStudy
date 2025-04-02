@@ -2,9 +2,13 @@ import React from "react";
 import Book from "./Book";
 import Clock from "./Clock";
 import AlertButton from "./AlertButton";
+import TextInputWithFocusButton from "./TextInputWithFocusButton";
+import UserStatus from "./UserStatus";
 
 function App() {
   const today = new Date().toLocaleDateString();
+
+  const user = {id: 1, name: "홍길동"};
 
   return (
     <div>
@@ -19,7 +23,10 @@ function App() {
       <Book name='리액트' numOfPage='500'/>
 
       <Clock />  */}
-      <AlertButton message="나를 눌렀느냐! 건방지구나!" /> {/*엘리먼트*/}
+      {/*<AlertButton message="나를 눌렀느냐! 건방지구나!" /> /!*엘리먼트*!/*/}
+
+        {/*<TextInputWithFocusButton />*/}
+        <UserStatus/>
     </div>
   );
 }
