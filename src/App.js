@@ -5,6 +5,7 @@ import AlertButton from "./AlertButton";
 import TextInputWithFocusButton from "./TextInputWithFocusButton";
 import UserStatus from "./UserStatus";
 import Toggle from "./Toggle";
+import SignUp from "./SignUp";
 
 function App() {
   const today = new Date().toLocaleDateString();
@@ -12,7 +13,7 @@ function App() {
   const user = {id: 1, name: "홍길동"};
 
   return (
-    <div>
+    <div className="App">
       {/* <h1>안녕하세요, 리액트!</h1>
       <p>오늘 날짜: {today}</p>
       <button onClick={() => alert("버튼이 클릭되었습니다!")}>
@@ -28,7 +29,7 @@ function App() {
 
         {/*<TextInputWithFocusButton />*/}
         {/*<UserStatus/>*/}
-      <Toggle/>
+      <SignUp />
     </div>
   );
 }
